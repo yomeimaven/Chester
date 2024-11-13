@@ -52,7 +52,7 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('ViewUserDevice', [ViewController::class, 'ViewUserDevice'])->name('ViewUserDevice');
     Route::get('requestlist', [ViewController::class, 'requestlist'])->name('requestlist');
     Route::get('approve', [DeviceController::class, 'approve'])->name('approve');
-
+    Route::get('decline', [DeviceController::class, 'decline'])->name('decline');
     //Ajax Request
     Route::get('usernameCheck', [AjaxController::class, 'usernameCheck'])->name('usernameCheck');
     Route::get('checkDeviceId', [AjaxController::class, 'checkDeviceId'])->name('checkDeviceId');

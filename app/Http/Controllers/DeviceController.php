@@ -89,4 +89,13 @@ class DeviceController extends Controller
         return back();
 
     }
+
+    public function decline(Request $request) {
+
+        Device::where('id', $request->id)->delete();
+
+        Session::flash('success', 'New Device Declined!');
+        return back();
+        // echo  "hello";
+    }
 }

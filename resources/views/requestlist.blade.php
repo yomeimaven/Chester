@@ -57,7 +57,7 @@
                                             <a href="{{ route('approve', [ 'id' => $key->id ]) }}" class="btn btn-success btn-sm">
                                                 <i class="mdi mdi-check"></i>
                                             </a>
-                                            <a href="" class="btn btn-danger btn-sm">
+                                            <a href="{{ route('decline', [ 'id' => $key->id ]) }}" class="btn btn-danger btn-sm">
                                                 <i class="mdi mdi-close"></i>
                                             </a>
 
